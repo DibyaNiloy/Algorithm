@@ -42,12 +42,18 @@ void merge_sort(int s[],int l, int r){
     }
 }
 int main(){
+     int n;
+    scanf("%d",&n);
+    int s[n];
+    for (int i = 0; i < n; i++)
+    {
+            scanf("%d",&s[i]);
 
-    int s[10]={4,7,1,2,4,10,1,6,8,13};
+    }
 
-    merge_sort(s,0,10);
+    merge_sort(s,0,n);
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < n; i++)
     {
        printf("%d ",s[i]);
     }
