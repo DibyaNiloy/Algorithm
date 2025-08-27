@@ -11,17 +11,17 @@ int main()
 
     }
     
-    int hole, value;
+    int j, key;
     for (int i = 1; i < n; i++)
     {
-        value = s[i];
-        hole = i;
-        while (hole > 0 && value < s[hole - 1])
+        key = s[i];
+        j = i-1;
+        while (j >= 0 && key < s[j])
         {
-            s[hole] = s[hole - 1];
-            hole--;
+            s[j+1] = s[j];
+            j--;
         }
-        s[hole] = value;
+        s[j+1] = key;
     }
     for (int i = 0; i < n; i++)
     {
