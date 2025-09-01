@@ -51,7 +51,7 @@ int main(){
 
     }
 
-    merge_sort(s,0,n);
+    merge_sort(s,0,n-1);
 
     for (int i = 0; i < n; i++)
     {
